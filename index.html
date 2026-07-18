@@ -1,87 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>meihse.al – Under Construction</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<!doctype html>
+<html lang="sq" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #0d0d0d;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
+    <!-- Optimizimi SEO -->
+    <title>MEI HSE SOLUTIONS | Konsulencë & Trajnime për Sigurinë në Punë</title>
+    <meta name="description" content="Ekspertizë inxhinierike, trajnime profesionale dhe mbikëqyrje për standardet HSE dhe ISO në Shqipëri. Partneri juaj për një të ardhme më të sigurt." />
+    <meta name="keywords" content="HSE, Siguria në punë, Trajnime ISO, Vlerësim rreziku, Auditime mjedisore, Supervizim ndërtimi, Tiranë, Shqipëri" />
+    <meta name="author" content="MEI HSE SOLUTIONS SHPK" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL (Shmang përmbajtjen e duplikuar në Google) -->
+    <link rel="canonical" href="https://meihse.al/" />
 
-    .container {
-      max-width: 540px;
-    }
+    <!-- OpenGraph Meta Tags (Për Facebook, LinkedIn, Instagram, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://meihse.al/" />
+    <meta property="og:title" content="MEI HSE SOLUTIONS | Ekspertizë & Siguri në Punë" />
+    <meta property="og:description" content="Partneri juaj për formimin profesional dhe rritjen e kapaciteteve në fushën e sigurisë dhe shëndetit në punë. Konsulencë, trajnime ISO dhe supervizim." />
+    <meta property="og:image" content="https://meihse.al/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="MEI HSE SOLUTIONS" />
+    <meta property="og:locale" content="sq_AL" />
 
-    .icon {
-      font-size: 4rem;
-      margin-bottom: 1.5rem;
-      animation: spin 4s linear infinite;
-      display: inline-block;
-    }
+    <!-- Twitter / X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://meihse.al/" />
+    <meta name="twitter:title" content="MEI HSE SOLUTIONS | Ekspertizë & Siguri në Punë" />
+    <meta name="twitter:description" content="Ekspertizë inxhinierike, trajnime profesionale dhe mbikëqyrje për standardet HSE dhe ISO në Shqipëri. Partneri juaj për një të ardhme më të sigurt." />
+    <meta name="twitter:image" content="https://meihse.al/og-image.jpg" />
 
-    @keyframes spin {
-      0%   { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MEI HSE" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      margin-bottom: 1rem;
-    }
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    p {
-      font-size: 1.1rem;
-      color: #a0a0a0;
-      line-height: 1.6;
-    }
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        color: #27ae60;
+      }
+      h2 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: #334155;
+      }
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+      }
+      p,
+      samp,
+      li {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+<body class="bg-[#F8FAFC]">
+    
+    <!-- Header & Navigation -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+      <nav class="flex items-center justify-between p-6 lg:px-8 max-w-7xl mx-auto" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <img src="./logo.svg" alt="MEI HSE SOLUTIONS Logo" class="h-10 w-auto" />
+          </a>
+        </div>
+        
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700">
+            <span class="sr-only">Hap menunë kryesore</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
 
-    .bar-wrap {
-      margin-top: 2rem;
-      background: #1e1e1e;
-      border-radius: 9999px;
-      height: 8px;
-      overflow: hidden;
-    }
+        <!-- Lidhjet me Anchor Tags (#) -->
+        <div class="hidden lg:flex lg:gap-x-12 font-semibold text-slate-700">
+          <a href="#rreth-nesh" class="hover:text-[#27AE60] transition-colors">Rreth Nesh</a>
+          <a href="#sherbimet" class="hover:text-[#27AE60] transition-colors">Shërbimet</a>
+          <a href="#trajnimet" class="hover:text-[#27AE60] transition-colors">Trajnimet</a>
+          <a href="#kontakt" class="hover:text-[#27AE60] transition-colors">Kontakt</a>
+        </div>
+      </nav>
+    </header>
 
-    .bar {
-      height: 100%;
-      width: 40%;
-      background: linear-gradient(90deg, #6c63ff, #48cfad);
-      border-radius: 9999px;
-      animation: progress 3s ease-in-out infinite alternate;
-    }
+    <main>
+      <!-- Hero Section -->
+      <section class="relative isolate pt-32 lg:pt-48 pb-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+          <h1 class="text-5xl sm:text-7xl tracking-tight mb-8">
+            Partneri juaj për një <span class="text-emerald">të ardhme më të sigurt</span>
+          </h1>
+          <p class="mt-8 text-lg font-medium text-slate-600 max-w-2xl mx-auto">
+            Ekspertizë inxhinierike, trajnime profesionale dhe mbikëqyrje për standardet HSE dhe ISO në Shqipëri.
+          </p>
+          <div class="mt-10">
+            <a href="#kontakt" class="rounded-md bg-[#27AE60] px-6 py-3 text-sm font-semibold text-white hover:bg-[#219150] transition-colors shadow-lg hover:shadow-xl">
+              Kërko Konsulencë
+            </a>
+          </div>
+        </div>
+      </section>
 
-    @keyframes progress {
-      from { width: 25%; }
-      to   { width: 65%; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="icon" role="img" aria-label="Under construction icon">⚙️</div>
-    <h1>Under Construction</h1>
-    <p>We're working hard to bring you something great.<br />Check back soon!</p>
-    <div class="bar-wrap">
-      <div class="bar"></div>
-    </div>
-  </div>
-</body>
+      <!-- Seksioni: Rreth Nesh -->
+      <section id="rreth-nesh" class="py-24 bg-white border-t border-slate-100">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8">Kush Jemi Ne</h2>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+              <strong>MEI HSE SOLUTIONS</strong> është partneri juaj i besuar për formimin profesional dhe rritjen e kapaciteteve në fushën e sigurisë dhe shëndetit në punë[cite: 5]. Kompania jonë funksionon si një urë lidhëse ndërmjet klientëve dhe ofruesve të shërbimeve, duke lehtësuar procesin e komunikimit, negocimit dhe finalizimit të marrëveshjeve[cite: 5].
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed">
+              Ofrimi i asistencës profesionale për interpretimin dhe zbatimin e legjislacionit shqiptar në fushën e HSE, si dhe konsulenca për vlerësimin e rrezikut, janë në thelb të veprimtarisë sonë të përditshme[cite: 5].
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seksioni: Shërbimet -->
+      <section id="sherbimet" class="py-24 bg-slate-50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-slate-800 text-center mb-16">Fushat e Ekspertizës</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <article class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all">
+              <h3 class="text-lg font-semibold text-[#27AE60] mb-3">HSE & Trajnime</h3>
+              <p class="text-sm text-slate-600">Trajnime ISO, PMI, ndihmë e parë dhe kualifikime profesionale për sigurinë në punë[cite: 5].</p>
+            </article>
+            <article class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all">
+              <h3 class="text-lg font-semibold text-[#27AE60] mb-3">Konsulencë</h3>
+              <p class="text-sm text-slate-600">Vlerësim rreziku, plane emergjence dhe asistencë për zbatimin e legjislacionit[cite: 5].</p>
+            </article>
+            <article class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all">
+              <h3 class="text-lg font-semibold text-[#27AE60] mb-3">Mjedis & GIS</h3>
+              <p class="text-sm text-slate-600">Auditime mjedisore, raporte ndikimi në mjedis dhe rilevime inxhinierike kadastrale (GIS)[cite: 5].</p>
+            </article>
+            <article class="p-6 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-all">
+              <h3 class="text-lg font-semibold text-[#27AE60] mb-3">Supervizim</h3>
+              <p class="text-sm text-slate-600">Mbikëqyrje, monitorim dhe kolaudim për infrastrukturën rrugore, hidrocentrale, tunele dhe veprimtarinë minerare[cite: 5].</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seksioni: Trajnimet -->
+      <section id="trajnimet" class="py-24 bg-white border-t border-slate-100">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4">Programet e Trajnimit</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Ne organizojmë trajnime specifike për rritjen e kapaciteteve në fushën e sigurisë dhe shëndetit në punë[cite: 5].</p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Kategoria 1 -->
+            <div class="p-8 bg-[#F8FAFC] rounded-2xl border border-slate-100 hover:border-[#27AE60] transition-colors">
+              <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#27AE60]"></span> Menaxhim & Standarde
+              </h3>
+              <ul class="space-y-3 text-sm text-slate-600 list-none pl-4 border-l border-[#27AE60]/30">
+                <li>Trajnime për standardet ISO[cite: 5]</li>
+                <li>Menaxher, Koordinator dhe Person Përgjegjës për Sigurinë dhe Shëndetin në Punë[cite: 5]</li>
+                <li>Menaxher / Auditues i Sistemit të Integruar Mjedisor[cite: 5]</li>
+                <li>Person Përgjegjës për Dëmet në Mjedis[cite: 5]</li>
+              </ul>
+            </div>
+            
+            <!-- Kategoria 2 -->
+            <div class="p-8 bg-[#F8FAFC] rounded-2xl border border-slate-100 hover:border-[#27AE60] transition-colors">
+              <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#27AE60]"></span> Rreziqe & Emergjenca
+              </h3>
+              <ul class="space-y-3 text-sm text-slate-600 list-none pl-4 border-l border-[#27AE60]/30">
+                <li>Rreziku nga Energjia Elektrike (Tension i Ulët, i Mesëm, i Lartë)[cite: 5]</li>
+                <li>Puna në lartësi dhe përdorimi i Pajisjeve Mbrojtëse Individuale (PMI)[cite: 5]</li>
+                <li>Puna në ambiente të mbyllura ose të dyshuara për ndotje[cite: 5]</li>
+                <li>Ekspert në dhënien e ndihmës së parë dhe ndërhyrjen ndaj emergjencave[cite: 5]</li>
+              </ul>
+            </div>
+
+            <!-- Kategoria 3 -->
+            <div class="p-8 bg-[#F8FAFC] rounded-2xl border border-slate-100 hover:border-[#27AE60] transition-colors">
+              <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#27AE60]"></span> Makineri & Pajisje
+              </h3>
+              <ul class="space-y-3 text-sm text-slate-600 list-none pl-4 border-l border-[#27AE60]/30">
+                <li>Përdorimi i ngarkuesve ballorë (forklift), autovinçave dhe vinçave mbi kamion[cite: 5]</li>
+                <li>Përdorimi i vinçit urë, vinçit kullë dhe vinçave të lëvizshëm[cite: 5]</li>
+                <li>Përdorimi i makinerive për punime në tokë (eskavator, fadromë)[cite: 5]</li>
+                <li>Montimi, çmontimi i skelave dhe platformave ngritëse të lëvizshme[cite: 5]</li>
+              </ul>
+            </div>
+
+            <!-- Kategoria 4 -->
+            <div class="p-8 bg-[#F8FAFC] rounded-2xl border border-slate-100 hover:border-[#27AE60] transition-colors">
+              <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#27AE60]"></span> Organizim Kantieri
+              </h3>
+              <ul class="space-y-3 text-sm text-slate-600 list-none pl-4 border-l border-[#27AE60]/30">
+                <li>Trajnim për personin udhëzues/sinjalizues për menaxhimin e trafikut të mjeteve (Banksman)[cite: 5]</li>
+                <li>Trajnim për personin udhëzues/sinjalizues gjatë ngritjes së ngarkesave (Slinger)[cite: 5]</li>
+                <li>Oficer i Sigurisë në Punë[cite: 5]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal Info Section -->
+      <section class="py-12 bg-slate-800 text-white">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+            <div class="md:col-span-2">
+              <p class="font-bold text-[#27AE60] mb-2">ZYRA QENDRORE</p>
+              <p class="text-slate-300">Tiranë, Njësia Bashkiake Nr.7, Rruga Ndre Mjeda, Kompleksi Star Construction, Struktura B1, Kati 2[cite: 5]</p>
+            </div>
+            <div>
+              <p class="font-bold text-[#27AE60] mb-2">SUBJEKTI</p>
+              <p class="text-slate-300">MEI HSE SOLUTIONS SHPK[cite: 5]</p>
+            </div>
+            <div>
+              <p class="font-bold text-[#27AE60] mb-2">NUIS</p>
+              <p class="text-slate-300">M61907032E[cite: 5]</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontakt" class="bg-white py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <div class="flex justify-center mb-8">
+          <img src="./logo.svg" alt="MEI HSE Logo" class="h-12 w-auto grayscale opacity-60" />
+        </div>
+        <div class="flex flex-col md:flex-row justify-center gap-6 text-lg font-medium text-slate-700 mb-8">
+          <a href="mailto:info@meihse.al" class="hover:text-[#27AE60] transition-colors flex items-center justify-center gap-2">
+            ✉ info@meihse.al
+          </a>
+          <a href="tel:0688090988" class="hover:text-[#27AE60] transition-colors flex items-center justify-center gap-2">
+            ✆ 0688090988
+          </a>
+        </div>
+        <p class="text-xs text-slate-400">
+          &copy; 2026 MEI HSE SOLUTIONS. Të gjitha të drejtat të rezervuara.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
